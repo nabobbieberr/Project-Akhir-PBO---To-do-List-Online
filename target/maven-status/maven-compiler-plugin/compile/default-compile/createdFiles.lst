@@ -1,0 +1,13 @@
+dao\produkDAO.class
+controller\AuthServlet.class
+model\produk.class
+controller\TodoServlet.class
+controller\CalendarServlet.class
+util\KoneksiDB.class
+dao\UserDAO.class
+controller\logoutServlet.class
+com\mycompany\javaweb\resources\JakartaEE10Resource.class
+com\mycompany\javaweb\JakartaRestConfiguration.class
+controller\RegisterServlet.class
+controller\AdminServlet.class
+model\User.class
