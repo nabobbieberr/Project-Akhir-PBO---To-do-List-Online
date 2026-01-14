@@ -178,9 +178,8 @@ Created for College Task - Object-Oriented Programming (PBO)
 
 Group Members:
 
-Lira Liska (Project Leader)
-Meisha Bongi Teluma (Backend Developer)
-Assyifa Khoirunissa Putri (Frontend Developer)
-Nabib Khalish Alfayadh (UI/UX Designer)
-Rafi Muhammad Ramadhan (Quality Assurance)
-
+Lira Liska |
+Meisha Bongi Teluma |
+Assyifa Khoirunissa Putri |
+Nabib Khalish Alfayadh | 0110224077
+Rafi Muhammad Ramadhan | 
