@@ -55,23 +55,26 @@
                 <div id="mobile-menu" class="hidden md:flex flex-1 justify-end gap-8 items-center">
                     <nav class="flex items-center gap-9">
                         <a class="text-sm font-medium hover:text-primary transition-colors" href="contact.jsp">Kontak Kami</a>
+                        <a class="text-sm font-medium hover:text-primary transition-colors" href="gallery.jsp">Galeri</a>
                         <a class="text-sm font-medium hover:text-primary transition-colors" href="#team">Tentang Kami</a>
                     </nav>
                     <div class="flex gap-3">
                         <a href="login_form.jsp" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-transparent border border-gray-300 dark:border-[#3b4754] text-sm font-bold hover:bg-gray-100 dark:hover:bg-[#1c2127] transition-colors">
                             <span class="truncate">Masuk</span>
                         </a>
+
                         <a href="login_form.jsp" class="flex min-w-[84px] items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-blue-600 transition-colors shadow-lg">
                             Mulai Sekarang
                         </a>
                     </div>
                 </div>
+
+                <!-- Mobile Menu Icon (Placeholder for responsive design) -->
                 <button id="menu-btn" class="md:hidden text-gray-900 dark:text-white">
                     <span class="material-symbols-outlined">menu</span>
                 </button>
             </div>
         </header>
-
         <!-- Main Content Wrapper (ISI HTML YANG KAMU KIRIM TANPA DIUBAH STYLE) -->
         <main class="flex flex-col items-center w-full">
             <!-- Hero Section -->
@@ -96,6 +99,7 @@
                             <a href="login_form.jsp" class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold hover:bg-blue-600 transition-all shadow-lg shadow-primary/30 hover:scale-105 active:scale-95">
                                 Mulai Sekarang - Gratis 
                             </a>
+                            </button>
                             <button class="flex items-center justify-center rounded-lg h-12 px-6 bg-white dark:bg-[#1c2127] border border-gray-200 dark:border-[#3b4754] text-gray-900 dark:text-white text-base font-bold hover:bg-gray-50 dark:hover:bg-[#283039] transition-all">
                                 <span class="material-symbols-outlined mr-2 text-[20px]">play_circle</span>
                                 Lihat Demo
@@ -119,7 +123,6 @@
                     </div>
                 </div>
             </section>
-
             <!-- About Section -->
             <section id="about" class="w-full px-4 py-20 bg-gray-50 dark:bg-[#0d1218]">
                 <div class="max-w-[900px] mx-auto text-center">
@@ -135,200 +138,213 @@
 
             <!-- Testimoni Section -->
             <section id="testimoni" class="w-full px-4 py-20 bg-blue-50 dark:bg-[#0d1218]">
-                <div class="max-w-[1100px] mx-auto text-center">
-
+                <div class="max-w-5xl mx-auto px-4 text-center">
                     <h2 class="text-3xl font-bold mb-2">Apa Kata Pengguna Kami?</h2>
-                    <p class="text-white-500 mb-8">
+                    <p class="text-gray-500 mb-8">
                         Pengalaman nyata dari pengguna To-Do-List Online
                     </p>
-
                     <!-- Carousel -->
                     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-
-
                             <div class="carousel-item active">
                                 <div class="flex flex-col items-center">
                                     <h4 class="font-semibold mt-4">Rafael Saputra</h4>
-                                    <span class="text-sm text-white-400">Mahasiswa</span>
+                                    <span class="text-sm text-gray-400">Mahasiswa</span>
                                     <img src="images/rafael.jpg"
                                          class="rounded-full mb-4"
                                          style="width:110px;height:110px;object-fit:cover;">
-                                    <p class="text-white-600 italic max-w-2xl">
+                                    <p class="text-gray-700 italic max-w-2xl">
                                         “Aplikasi ini bikin tugas harian aku jauh lebih rapi.
                                         Sekarang nggak ada lagi yang kelupaan.”
                                     </p>
-                                    <br>
                                     <h4 class="font-semibold mt-4">Iput</h4>
-                                    <span class="text-sm text-white-400">Freelance</span>
+                                    <span class="text-sm text-gray-400">Freelance</span>
                                 </div>
                             </div>
-
-
                             <div class="carousel-item">
                                 <div class="flex flex-col items-center">
                                     <img src="images/iput.jpg"
                                          class="rounded-full mb-4"
                                          style="width:110px;height:110px;object-fit:cover;">
-                                    <p class="text-white-600 italic max-w-2xl">
+                                    <p class="text-gray-700 italic max-w-2xl">
                                         “Simple tapi powerful. Cocok banget buat freelancer
                                         yang kerja dengan banyak deadline.”
                                     </p>
-                                    <br>
                                     <h4 class="font-semibold mt-4">Lunaira Putri</h4>
-                                    <span class="text-sm text-white-400">Karyawan</span>
+                                    <span class="text-sm text-gray-400">Karyawan</span>
                                 </div>
                             </div>
-
                             <!-- Item 3 -->
                             <div class="carousel-item">
                                 <div class="flex flex-col items-center">
                                     <img src="images/lunaira.jpg"
                                          class="rounded-full mb-4"
                                          style="width:110px;height:110px;object-fit:cover;">
-                                    <p class="text-white-600 italic max-w-2xl">
+                                    <p class="text-gray-700 italic max-w-2xl">
                                         “Dipakai satu tim juga enak.
                                         Tampilannya bersih dan nggak ribet.”
                                     </p>
-
                                 </div>
                             </div>
-
                         </div>
-                        </section>
+                        <!-- Control -->
+                        <button class="carousel-control-prev" type="button"
+                                data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                                data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </section>
 
-                        <!-- Features Section -->
-                        <section class="w-full px-4 py-16 md:py-24 max-w-[1280px] mx-auto" id="features">
-                            <div class="flex flex-col gap-12">
-                                <div class="flex flex-col items-center text-center gap-4 max-w-[800px] mx-auto">
-                                    <h2 class="text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em] text-gray-900 dark:text-white">
-                                        Semua yang Anda butuhkan untuk tetap fokus
-                                    </h2>
-                                    <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-                                        Kami merancang antarmuka yang bersih agar Anda bisa langsung bekerja tanpa gangguan.
-                                    </p>
-                                </div>
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                    <div class="group flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-[#3b4754] bg-white dark:bg-[#1c2127] p-8 hover:border-primary/50 transition-colors duration-300">
-                                        <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                                            <span class="material-symbols-outlined text-[28px]">format_list_bulleted</span>
-                                        </div>
-                                        <h3 class="text-xl font-bold leading-tight">Buat Daftar Tanpa Batas</h3>
-                                        <p class="text-gray-500 dark:text-gray-400 font-normal leading-relaxed">
-                                            Organisir pekerjaan, rumah, dan proyek pribadi secara terpisah.
-                                        </p>
-                                    </div>
-                                    <div class="group flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-[#3b4754] bg-white dark:bg-[#1c2127] p-8 hover:border-primary/50 transition-colors duration-300">
-                                        <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                                            <span class="material-symbols-outlined text-[28px]">bolt</span>
-                                        </div>
-                                        <h3 class="text-xl font-bold leading-tight">Tambah Tugas Instan</h3>
-                                        <p class="text-gray-500 dark:text-gray-400 font-normal leading-relaxed">
-                                            Tangkap ide sebelum hilang dengan antarmuka penambahan cepat kami.
-                                        </p>
-                                    </div>
-                                    <div class="group flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-[#3b4754] bg-white dark:bg-[#1c2127] p-8 hover:border-primary/50 transition-colors duration-300">
-                                        <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                                            <span class="material-symbols-outlined text-[28px]">notifications_active</span>
-                                        </div>
-                                        <h3 class="text-xl font-bold leading-tight">Tampilan Fleksibel</h3>
-                                        <p class="text-gray-500 dark:text-gray-400 font-normal leading-relaxed">
-                                            Sesuaikan tampilan sesuai preferensimu.
-                                        </p>
-                                    </div>
-                                </div>
+            <!-- Features Section -->
+            <section class="w-full px-4 py-16 md:py-24 max-w-[1280px] mx-auto" id="features">
+                <div class="flex flex-col gap-12">
+                    <div class="flex flex-col items-center text-center gap-4 max-w-[800px] mx-auto">
+                        <h2 class="text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em] text-gray-900 dark:text-white">
+                            Semua yang Anda butuhkan untuk tetap fokus
+                        </h2>
+                        <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                            Kami merancang antarmuka yang bersih agar Anda bisa langsung bekerja tanpa gangguan.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Feature 1 -->
+                        <div class="group flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-[#3b4754] bg-white dark:bg-[#1c2127] p-8 hover:border-primary/50 transition-colors duration-300">
+                            <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                <span class="material-symbols-outlined text-[28px]">format_list_bulleted</span>
                             </div>
-                        </section>
-
-                        <!-- Team Section -->
-                        <section id="team" class="w-full px-4 py-20 bg-white dark:bg-[#101922]">
-                            <div class="max-w-[1100px] mx-auto text-center">
-
-                                <h2 class="text-3xl md:text-4xl font-black mb-4">
-                                    Tim Pengembang
-                                </h2>
-                                <p class="text-gray-600 dark:text-gray-300 mb-12">
-                                    Orang-orang di balik pengembangan To-Do-List Online
-                                </p>
-
-                                <!-- Team Grid -->
-                                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
-
-                                    <!-- Member 1 -->
-                                    <div class="flex flex-col items-center gap-3">
-                                        <img src="images/lira.jpeg"
-                                             class="w-28 h-28 rounded-full object-cover border-4 border-primary shadow-lg"
-                                             alt="Anggota 1">
-                                        <h3 class="font-bold text-lg">Lira Liska</h3>
-                                        <p class="text-sm text-gray-500 dark:text-gray-400">
-                                            Project Leader
-                                        </p>
-                                    </div>
-
-                                    <!-- Member 2 -->
-                                    <div class="flex flex-col items-center gap-3">
-                                        <img src="images/meisha.jpeg"
-                                             class="w-28 h-28 rounded-full object-cover border-4 border-primary shadow-lg"
-                                             alt="Anggota 2">
-                                        <h3 class="font-bold text-lg">Meisha Bongi Teluma</h3>
-                                        <p class="text-sm text-gray-500 dark:text-gray-400">
-                                            Backend Developer
-                                        </p>
-                                    </div>
-
-                                    <!-- Member 3 -->
-                                    <div class="flex flex-col items-center gap-3">
-                                        <img src="images/asyifa.jpeg"
-                                             class="w-28 h-28 rounded-full object-cover border-4 border-primary shadow-lg"
-                                             alt="Anggota 3">
-                                        <h3 class="font-bold text-lg">Assyifa Khoirunissa Putri</h3>
-                                        <p class="text-sm text-gray-500 dark:text-gray-400">
-                                            Frontend Developer
-                                        </p>
-                                    </div>
-
-                                    <!-- Member 4 -->
-                                    <div class="flex flex-col items-center gap-3">
-                                        <img src="images/nabil.jpeg"
-                                             class="w-28 h-28 rounded-full object-cover border-4 border-primary shadow-lg"
-                                             alt="Anggota 4">
-                                        <h3 class="font-bold text-lg">Nabib Khalish Alfayadh</h3>
-                                        <p class="text-sm text-gray-500 dark:text-gray-400">
-                                            UI/UX Designer
-                                        </p>
-                                    </div>
-
-                                    <!-- Member 5 -->
-                                    <div class="flex flex-col items-center gap-3">
-                                        <img src="images/rafi.jpeg"
-                                             class="w-28 h-28 rounded-full object-cover border-4 border-primary shadow-lg"
-                                             alt="Anggota 5">
-                                        <h3 class="font-bold text-lg">Rafi Muhammad Ramadhan</h3>
-                                        <p class="text-sm text-gray-500 dark:text-gray-400">
-                                            Quality Assurance
-                                        </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </section>  
-                        <footer class="w-full bg-white dark:bg-[#101922] border-t border-gray-200 dark:border-[#283039] py-12 px-4">
-                            <div class="max-w-[1280px] mx-auto flex flex-col items-center justify-center gap-4 text-center">
-                                <div class="flex items-center gap-3 text-gray-900 dark:text-white mb-4">
-                                    <span class="text-2xl">📝</span>
-                                    <h2 class="text-lg font-bold">To-Do-List online</h2>
-                                </div>
-                                <p class="text-gray-500 dark:text-gray-400 text-sm">
-                                    © 2025 To-Do-List Online (Kelompok 6). Hak Cipta Dilindungi.
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-xl font-bold leading-tight">Buat Daftar Tanpa Batas</h3>
+                                <p class="text-gray-500 dark:text-gray-400 font-normal leading-relaxed">
+                                    Organisir pekerjaan, rumah, dan proyek pribadi secara terpisah.
                                 </p>
                             </div>
-                        </footer>
-                        <script>
-                            const menuBtn = document.getElementById("menu-btn");
-                            const mobileMenu = document.getElementById("mobile-menu");
-                            menuBtn.addEventListener("click", () => {
-                                mobileMenu.classList.toggle("hidden");
-                            });
-                        </script>
-                        </body>
-                        </html>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div class="group flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-[#3b4754] bg-white dark:bg-[#1c2127] p-8 hover:border-primary/50 transition-colors duration-300">
+                            <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                <span class="material-symbols-outlined text-[28px]">bolt</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-xl font-bold leading-tight">Tambah Tugas Instan</h3>
+                                <p class="text-gray-500 dark:text-gray-400 font-normal leading-relaxed">
+                                    Tangkap ide sebelum hilang dengan antarmuka penambahan cepat kami.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div class="group flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-[#3b4754] bg-white dark:bg-[#1c2127] p-8 hover:border-primary/50 transition-colors duration-300">
+                            <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                <span class="material-symbols-outlined text-[28px]">notifications_active</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h3 class="text-xl font-bold leading-tight">Tampilan Fleksibel</h3>
+                                <p class="text-gray-500 dark:text-gray-400 font-normal leading-relaxed">
+                                    Sesuaikan tampilan sesuai preferensimu.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section id="team" class="w-full px-4 py-20 bg-white dark:bg-[#101922]">
+                <div class="max-w-[1100px] mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-black mb-4">
+                        Tim Pengembang
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-12">
+                        Orang-orang di balik pengembangan To-Do-List Online
+                    </p>
+                    <!-- Team Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
+                        <!-- Member 1 -->
+                        <div class="flex flex-col items-center gap-3">
+                            <img src="images/lira.jpeg"
+                                 class="w-28 h-28 rounded-full object-cover border-4 border-primary shadow-lg"
+                                 alt="Anggota 1">
+                            <h3 class="font-bold text-lg">Lira Liska</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">
+                                Project Leader
+                            </p>
+                        </div>
+                        <!-- Member 2 -->
+                        <div class="flex flex-col items-center gap-3">
+                            <img src="images/meisha.jpeg"
+                                 class="w-28 h-28 rounded-full object-cover border-4 border-primary shadow-lg"
+                                 alt="Anggota 2">
+                            <h3 class="font-bold text-lg">Meisha Bongi Teluma</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">
+                                Backend Developer
+                            </p>
+                        </div>
+                        <!-- Member 3 -->
+                        <div class="flex flex-col items-center gap-3">
+                            <img src="images/asyifa.jpeg"
+                                 class="w-28 h-28 rounded-full object-cover border-4 border-primary shadow-lg"
+                                 alt="Anggota 3">
+                            <h3 class="font-bold text-lg">Assyifa Khoirunissa Putri</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">
+                                Frontend Developer
+                            </p>
+                        </div>
+                        <!-- Member 4 -->
+                        <div class="flex flex-col items-center gap-3">
+                            <img src="images/nabil.jpeg"
+                                 class="w-28 h-28 rounded-full object-cover border-4 border-primary shadow-lg"
+                                 alt="Anggota 4">
+                            <h3 class="font-bold text-lg">Nabib Khalish Alfayadh</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">
+                                UI/UX Designer
+                            </p>
+                        </div>
+                        <!-- Member 5 -->
+                        <div class="flex flex-col items-center gap-3">
+                            <img src="images/rafi.jpeg"
+                                 class="w-28 h-28 rounded-full object-cover border-4 border-primary shadow-lg"
+                                 alt="Anggota 5">
+                            <h3 class="font-bold text-lg">Rafi Muhammad Ramadhan</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">
+                                Quality Assurance
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w-full bg-white dark:bg-[#101922] border-t border-gray-200 dark:border-[#283039] py-12 px-4">
+    <div class="max-w-[1280px] mx-auto flex flex-col items-center justify-center gap-4 text-center">
+        <div class="flex items-center gap-3 text-gray-900 dark:text-white mb-4">
+            <div class="flex items-center justify-center size-6 bg-primary rounded text-white">
+            </div>
+            <img 
+                src="images/logo2.png"
+                style="width:100px; height:auto;"
+                alt="Logo To-Do List"
+                />
+            <h2 class="text-lg font-bold">To-Do-List online</h2>
+        </div>
+        <p class="text-gray-500 dark:text-gray-400 text-sm">
+            © 2025 To-Do-List Online(kelompok 6). Hak Cipta Dilindungi.
+        </p>
+    </div>
+</footer>
+<script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+</script>
+</body>
+</html>
